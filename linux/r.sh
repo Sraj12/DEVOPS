@@ -1,5 +1,5 @@
 #!/bin/bash
-hello wolrd
-i am doing good
-i never give up
-i hate people
+echo "hello wolrd"
+echo "i am doing good"
+echo "i never give up"
+echo "i hate people"
