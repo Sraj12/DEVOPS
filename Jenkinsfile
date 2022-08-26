@@ -6,9 +6,7 @@ pipeline {
       steps {
        sh '''
         echo "hello" 
-        echo "running on hostname" 
-        
-
+        echo "running on hostname"
        '''
       }
     }
