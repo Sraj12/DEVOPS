@@ -1,10 +1,10 @@
 pipeline {
-  agent any {
-    stages {
-      stage('roll') {
-        steps {
-          sh 'echo "hello" '
-        }
+  agent any
+
+  stages {
+    stage('roll') {
+      steps {
+        sh 'echo "hello" '
       }
     }
   }
