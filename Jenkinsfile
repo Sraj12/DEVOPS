@@ -7,6 +7,7 @@ pipeline {
        sh '''
         echo "hello" 
         echo "running on hostname"
+        bash $(WORKSPACE)/p.sh
        '''
       }
     }
