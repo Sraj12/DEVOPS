@@ -4,9 +4,9 @@ pipeline {
   stages {
     stage('roll') {
       steps {
-        '''
-        sh 'echo "hello" '
-        sh 'echo "running on 'hostname`" '
+       sh '''
+        echo "hello" 
+        echo "running on 'hostname`" 
        '''
       }
     }
