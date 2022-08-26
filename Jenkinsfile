@@ -1,10 +1,11 @@
-pipeline{
-agent any
-stages{
-stage('roll'){
-step{
-sh 'exho "hello world" '
-}
-}
-}
+pipeline {
+  agent any {
+    stages {
+      stage('roll') {
+        steps {
+          sh 'echo "hello" '
+        }
+      }
+    }
+  }
 }
