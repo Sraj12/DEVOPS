@@ -7,7 +7,7 @@ pipeline {
        sh '''
         echo "hello" 
         echo "running on hostname" 
-       bash $(WORKSPACE)/linux/s.sh
+       bash $(WORKSPACE)/linux/r.sh
        '''
       }
     }
