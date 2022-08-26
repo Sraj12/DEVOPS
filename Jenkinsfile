@@ -1,5 +1,5 @@
 pipeline{
-get any
+agent any
 stages{
 stage('roll'){
 step{
