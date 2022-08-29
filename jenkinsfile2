@@ -8,7 +8,7 @@ pipeline{
         stage('build'){
             steps{
                script{
-                       sh 'echo "${name}" '
+                       sh 'echo "${params.name}" '
             }
         }
     }
