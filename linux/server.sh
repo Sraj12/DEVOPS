@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "hello"
-echo "hostname $(hostname -I) "
+echo "hostname $(hostname) "
 echo "cpu details $(lscpu) "
 echo "mem details $(lsmem) "
 echo "block details $(lsblk) "
