@@ -4,9 +4,11 @@ stages{
 stage('build'){
 steps{
 sh '''
+echo "hi"
 echo "hello"
 echo "world"
-'''}
+'''
+}
 }
 }
 }
