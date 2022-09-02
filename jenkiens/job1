@@ -4,6 +4,7 @@ stages{
 stage('build'){
 steps{
 sh '''
+echo "aws"
 echo "hi"
 echo "hello"
 echo "world"
