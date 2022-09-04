@@ -19,6 +19,12 @@ pipeline {
           }
         }
 
+        stage('roll2') {
+          steps {
+            sh 'echo "world"'
+          }
+        }
+
       }
     }
 
