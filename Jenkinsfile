@@ -25,6 +25,12 @@ pipeline {
           }
         }
 
+        stage('roll3') {
+          steps {
+            sh 'echo " good morning "'
+          }
+        }
+
       }
     }
 
