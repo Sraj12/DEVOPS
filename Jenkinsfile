@@ -2,12 +2,23 @@ pipeline {
   agent any
   stages {
     stage('roll') {
-      steps {
-        sh '''
+      parallel {
+        stage('roll') {
+          steps {
+            sh '''
         echo "hello" 
         echo "running on hostname"
    
        '''
+          }
+        }
+
+        stage('roll1') {
+          steps {
+            sh 'echo " hello "'
+          }
+        }
+
       }
     }
 
