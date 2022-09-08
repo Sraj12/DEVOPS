@@ -1,0 +1,20 @@
+pipeline{
+    agent {
+             label "Slave"
+}
+   parameters {
+  string description: 'Enter Name', name: 'Name'
+}
+
+    stages{
+        stage('build'){
+            steps{
+                sh '''
+                echo "Enter Name:"
+                
+                echo " Name is ${Name}"
+                '''
+            }
+        }
+    }
+}
