@@ -1,7 +1,5 @@
 pipeline{
-    agent {
-             label "Slave"
-}
+    agent any
    parameters {
   string description: 'Enter Name', name: 'Name'
 }
