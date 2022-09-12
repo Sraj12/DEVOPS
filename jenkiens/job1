@@ -8,6 +8,9 @@ stages{
     stage('run'){
         steps{
            build job : 'pipe2', parameters: [string ( name: 'ENV', value: "${params.ENV}" )]
+           sh '''
+             echo "hi"
+            '''
         }
     }
 }

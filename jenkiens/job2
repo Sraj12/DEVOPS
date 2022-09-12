@@ -8,7 +8,7 @@ stages{
     stage('para'){
         steps{
             script{
-            echo " name is : ${params.ENV}"
+            echo "your  name is : ${params.ENV}"
             }
         }
     }
