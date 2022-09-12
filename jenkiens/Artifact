@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Download') {
             steps {
-                sh 'echo "artifact file download" > File.txt'
+                sh 'echo "artifact file downloading" > File.txt'
             }
         }
     }
