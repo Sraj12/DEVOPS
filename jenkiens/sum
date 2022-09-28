@@ -12,7 +12,6 @@ stages{
                   echo " Sum is: $sum " 
             '''
         }
-    }
 }
-
 }
+}   
