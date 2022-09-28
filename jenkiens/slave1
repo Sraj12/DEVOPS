@@ -1,0 +1,31 @@
+pipeline {
+    agent {
+        label  "Node1"
+    }
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('hi'){
+            agent{
+                label "Node2"
+            }
+            steps{
+                echo "wonderfull"
+            }
+        }
+        stage('hey'){
+            agent{
+                label "Node3"
+            }
+            steps{
+                echo "wind"
+            }
+        }
+    }
+    
+}
+
