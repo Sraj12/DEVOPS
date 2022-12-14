@@ -1,0 +1,20 @@
+pipeline{
+agent any
+parameters {
+  text description: 'Enter num', name: 'num'
+  text description: 'Enter Num', name: 'Num'
+}
+stages{
+stage('build'){
+steps{
+sh '''
+read num, Num, Add
+echo "enter num is $num"
+echo "enter Num is $Num"
+Add = $num + $Num
+echo " sum is $Add"
+'''
+}
+}
+}
+}
