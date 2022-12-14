@@ -1,20 +1,17 @@
 pipeline{
-agent any
-parameters {
-  text description: 'Enter num', name: 'num'
-  text description: 'Enter Num', name: 'Num'
+    agent any
+ parameters {
+  string description: 'Enter Number1', name: 'num1'
+  string description: 'Enter Number2', name: 'Num2'
 }
 stages{
-stage('build'){
-steps{
-sh '''
-read num, Num, Add
-echo "enter num is $num"
-echo "enter Num is $Num"
-Add = $num + $Num
-echo " sum is $Add"
-'''
-}
-}
-}
+    stage('add'){
+        steps{
+            sh'''
+                  sum=$(($num1 + $Num2))
+                  echo " Sum is: $sum " 
+            '''
+        }
+    }
+  }
 }
