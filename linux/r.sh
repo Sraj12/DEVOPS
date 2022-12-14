@@ -1,5 +1,10 @@
 #!/bin/bash
-echo "hello wolrd"
-echo "i am doing good"
-echo "i never give up"
-echo "i hate people"
+echo "hi"
+echo " $(cp s.sh r.sh) "
+echo " $(ls -l) "
+
+for i in {1..10}
+do 
+	echo " hello $i times"
+done
+
