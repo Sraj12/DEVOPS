@@ -17,4 +17,7 @@ echo -e "\e[46m background-color CYAN"
 echo -e "\e[47m background-color WHITE"
 echo -e "\e[00m back to normal color"
 echo -e "\e[1;33;41m Enable Color \e[0m"
-                                           
+echo " mail -s HELLO root@ip-172-31-89-138"
+echo -n "hello"
+echo " helllo world"
+echo "$(ls -l *.sh)"
