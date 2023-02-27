@@ -1,25 +1,9 @@
-terraform {
-required_providers {
-docker = {
-source = "kreuzwerker/docker" 
-version = "~> 2.21.0"
-}
-}
+resource "local_file" "program" {
+filename = "/home/ubuntu/terrafrom-course/teraform-variable/first.txt"
+content = "hello i am Rajashree \n"
 }
 
-provider "docker" {
-}
-
-resource "docker_image" "nginx" {
-name = "nginx:latest"
-keep_locally = false
-}
-
-resource "docker_container" "nginx" {
-image = docker_image.nginx.latest
-name = "nginx-dummy"
-ports {
-internal  = 80 #container port
-external = 80  #system port
-}
+resource "local_file" "programme" {
+filename = var.filename
+content = var.content
 }
