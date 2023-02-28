@@ -1,9 +1,9 @@
 resource "local_file" "program" {
-filename = "/home/ubuntu/terrafrom-course/teraform-variable/first.txt"
-content = "hello i am Rajashree \n"
+  filename = var.file_list[0]  #change file names
+  content  = var.content_opt["content1"]  #change contents
 }
 
 resource "local_file" "programme" {
-filename = var.filename
-content = var.content
+  filename = var.file_list[1]
+  content  = var.content_opt["content2"]
 }
