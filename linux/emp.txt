@@ -1,0 +1,8 @@
+12,anuj,29000,Tailor
+13,jar,20000,doctor
+14,shiva,25000,nurse
+15,veena,4000,MLA
+16,sonu,30000,MNC
+17,meen,4000,nurse
+18,beem,50000,police
+20, laxmi,3000,MNC

@@ -1,0 +1,16 @@
+resource "local_file" "Devops" {
+filename = "/home/ubuntu/terrafrom-course/terraform-local/devops_automate.txt"
+content = " i want to become devops engineer who knows terraform "
+}
+
+resource "random_string" "rand_str" {
+length = 16
+special = true
+override_special = "!#$*&()[]{}<>?:"
+}
+
+output "rand_str" {
+value = random_string.rand_str[*].result
+}
+
+~      
